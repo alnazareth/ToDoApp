@@ -44,5 +44,5 @@ Organize your day, mark tasks as completed, edit, delete, filter, and much more 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-todo-app-repo.git
+git clone [https://github.com/your-username/your-todo-app-repo.git](https://github.com/alnazareth/ToDoApp.git)
 cd your-todo-app-repo
