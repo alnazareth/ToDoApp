@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#task-input {
+  width: 70%;
+  padding: 10px;
+}
+#add-task {
+  padding: 10px 15px;
+}
+#task-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #eee;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.task-item span {
+  cursor: pointer;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item button {
+  margin-left: 10px;
+  background: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-item button:hover {
+  background: #e04343;
+}
+
+.edit-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode button,
+body.dark-mode .task-item {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+body.dark-mode .completed {
+  color: #999;
+  text-decoration: line-through;
+}
+
+#toggle-mode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+body.dark-mode #toggle-mode {
+  background-color: #eee;
+  color: #222;
+}
+
+.task-item {
+  cursor: move;
+}
+
+.ui-sortable-placeholder {
+  background: #ddd;
+  border: 2px dashed #999;
+  visibility: visible !important;
+  height: 50px;
+}
+
+#toggle-all {
+  margin-top: 10px;
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.dark-mode #toggle-all {
+  background-color: #ccc;
+  color: #222;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+body.dark-mode #search {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+
+
+  .filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+

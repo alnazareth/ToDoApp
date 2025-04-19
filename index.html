@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<!-- SweetAlert CDN -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+  <div class="todo-container">
+    <h1>To-Do App</h1>
+
+
+    <input type="text" id="task-input" placeholder="New task..."/>
+    <button id="add-task">Add</button>
+    <input type="text" id="search" placeholder="🔍 Search task...">
+    <div id="filters" style="margin-top: 1em;">
+  <button class="filter-btn" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="completed">Completed</button>
+  <button class="filter-btn" data-filter="pending">Pending</button>
+</div>
+
+
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+  <button id="toggle-mode">🌙 Modo Oscuro</button>
+
+</body>
+</html>
